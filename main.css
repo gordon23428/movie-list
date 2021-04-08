@@ -1,0 +1,17 @@
+body{
+  background-image: url(http://www.51pptmoban.com/d/file/2020/12/16/0004db1daca0c0c96fb54cd5f0828f9c.jpg);
+  background-size: cover;
+}
+.card-img-top{
+  transition: border-radius 0.5s ease;
+}
+.card:hover .card-img-top{
+  border-radius: 50%;
+}
+#movie-fuid{
+  width: 100%;
+}
+.icon{
+  display: flex;
+  flex-direction: row;
+}

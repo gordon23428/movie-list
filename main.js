@@ -13,7 +13,7 @@ const icon = document.querySelector('.icon')
 function renderMovieList(data) {
   let rawHTML = ''
   data.forEach(item => {
-    rawHTML += `<div class="col-sm-3" id="card">
+    rawHTML += `<div class="col-6 col-sm-3" id="card">
                     <div class="mb-2">
                         <div class ="card">
                             <img src="${POSTER_URL + item.image}"
@@ -93,9 +93,8 @@ function addToFavorite(id) {
     return alert('此電影已經在電影清單中')
   }
   list.push(movies)
-  console.log(list)
   localStorage.setItem('favoriteMovies', JSON.stringify(list))
-  console.log(localStorage.getItem('favoriteMovies'))
+
 }
 
 dataPanel.addEventListener('click', function onPanelClicked(event) {
@@ -103,7 +102,6 @@ dataPanel.addEventListener('click', function onPanelClicked(event) {
     showMovieModal(Number(event.target.dataset.id))
   } else if (event.target.matches('.btn-add-favorite')) {
     addToFavorite(Number(event.target.dataset.id))
-
   }
 })
 
