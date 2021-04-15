@@ -40,7 +40,7 @@ function renderMovieListMod2(data) {
                     <div class="mb-1">
                         <div class ="list" data-tilt>
                             <div class="row">
-                                <h5 class="card-title col-10">${item.title}</h5>
+                                <h5 class="list-title col-10">${item.title}</h5>
                                 <div class="button col-2">
                                 <button class="btn btn-primary btn-show-movie" data-toggle="modal"
                                     data-target="#movie-modal" data-id=${item.id}>More</button>
@@ -134,9 +134,9 @@ paginator.addEventListener('click', function onPaginatorClicked(event) {
 })
 icon.addEventListener('click', function onIconClick(event) {
   console.log(event.target.parentElement)
-  if (event.target.parentElement.matches('.card') || event.target.parentElement.matches('.fa-th')) {
+  if (event.target.parentElement.matches('.cardMod') || event.target.parentElement.parentElement.matches('.cardMod')) {
     renderMovieList(getMoviesByPage(1))
-  } else if (event.target.parentElement.matches('.list') || event.target.parentElement.matches('.fa-bar')) {
+  } else if (event.target.parentElement.matches('.listMod') || event.target.parentElement.parentElement.matches('.listMod')) {
     renderMovieListMod2(getMoviesByPage(1))
   }
 
