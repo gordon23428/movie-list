@@ -7,5 +7,5 @@
 favorite頁面可以觀看自己收藏的電影也可以刪除
 並用分頁器分割電影數量一頁一頁呈現
 
-可直接前往githubPage觀看成果
+可直接前往GitHub Pages觀看成果
 https://gordon23428.github.io/movie-list/
